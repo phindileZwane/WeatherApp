@@ -38,7 +38,7 @@ function displayWeather(data) {
     const hourlyForecastDiv = document.getElementById('hourly-forecast');
 
   
-
+//gives this error because it cant find the location that is typed and gets the default alert one from the internet
     if (data.cod === '404') {
         weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
     } else {
@@ -55,7 +55,7 @@ function displayWeather(data) {
             <p>${cityName}</p>
             <p>${description}</p>
         `;
-
+//replacing this info to the html
         tempDivInfo.innerHTML = temperatureHTML;
         weatherInfoDiv.innerHTML = weatherHtml;
        
@@ -83,14 +83,7 @@ function displayHourlyForecast(hourlyData) {
                 <span>${temperature}°C</span>
             </div>
         `;
-
+//replacing this info to html
         hourlyForecastDiv.innerHTML += hourlyItemHtml;
     });
 }
-
-// showing the icon
-function showImage() {
-    const weatherIcon = document.getElementById('weather-icon');
-    weatherIcon.style.display = 'block';
-}
-
