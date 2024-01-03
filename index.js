@@ -39,8 +39,9 @@ function displayWeather(data) {
 
   
 //gives this error because it cant find the location that is typed and gets the default alert one from the internet
-    if (data.cod === '404') {
-        weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
+    if (data.cod == '404') {
+        alert("Location invalid")
+       // weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
     } else {
         const cityName = data.name;
         const temperature = Math.round(data.main.temp - 273.15); // Convert to Celsius
