@@ -23,6 +23,7 @@ body{
 }
 h2, label, p{
     margin: 8px 0;
+    margin-bottom: 10px;
 }
 input{
     width: calc(100% - 16px);
