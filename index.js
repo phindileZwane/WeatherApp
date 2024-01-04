@@ -39,7 +39,7 @@ function displayWeather(data) {
 
   
 //gives this error because it cant find the location that is typed and gets the default alert one from the internet
-    if (data.cod == '404') {
+    if (data.cod == '404') {//not found error type
         alert("Location invalid")
        // weatherInfoDiv.innerHTML = `<p>${data.message}</p>`;
     } else {
