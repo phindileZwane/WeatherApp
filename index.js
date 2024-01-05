@@ -60,8 +60,6 @@ function displayWeather(data) {
         tempDivInfo.innerHTML = temperatureHTML;
         weatherInfoDiv.innerHTML = weatherHtml;
        
-
-       
     }
 }
 
